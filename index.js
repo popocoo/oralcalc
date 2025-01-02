@@ -183,8 +183,8 @@ var app = new Vue({
 		username: '',
 		password: '',
 		is_login: false,
-		count: 300,
-		pagerows: 20,
+		count: 1800,
+		pagerows: 30,
 		cols: 3,
 
 		strategy: 'random',
@@ -207,32 +207,32 @@ var app = new Vue({
 		range_op: [],
 
 		// 加法
-		defrange_add: [{min: 11, max: 100}, {min: 11, max: 100}],
-		result_add: {min: 20, max: 100},
+		defrange_add: [{min: 11, max: 200}, {min: 11, max: 200}],
+		result_add: {min: 20, max: 200},
 		range_add: [],
 
 		// 减法
-		defrange_sub: [{min: 20, max: 100}, {min: 10, max: 100}],
+		defrange_sub: [{min: 20, max: 200}, {min: 10, max: 200}],
 		result_sub: {min: 10, max: 100},
 		range_sub: [],
 
 		// 乘法
-		defrange_mul: [{min: 0, max: 9}, {min: 0, max: 9}],
-		result_mul: {min: 4, max: 81},
+		defrange_mul: [{min: 2, max: 9}, {min: 2, max: 9}],
+		result_mul: {min: 4, max: 150},
 		range_mul: [],
 
 		// 除法
-		defrange_div: [{min: 0, max: 81}, {min: 2, max: 9}],
+		defrange_div: [{min: 2, max: 81}, {min: 2, max: 20}],
 		result_div: {min: 2, max: 9},
 		range_div: [],
 
 		borrow: 'random', // 减法借位设置
 		carry: 'random', // 加法进位设置
 		nomod: 'yes', // 除法余数设置
-		fontsize: 25,
+		fontsize: 22,
 		fontfamily: '宋体',
 		cellPadding: 6,
-		cellSpacing: 16,
+		cellSpacing: 7,
 		res: [],
 		appendemptyrows: false,
 		report: {
